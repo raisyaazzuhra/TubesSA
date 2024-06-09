@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhaustive Search Knapsack Problem Solver</title>
+    <link rel="stylesheet" type="text/css" href="css/exhaustiveSearch.css">
+</head>
+<body>
+    <h1>Exhaustive Search Knapsack Problem Solver</h1>
+    <p>&emsp;Helmi Efendi Lubis (1301223338)</p>
+    <p>&emsp;Raisya Azzuhra (1301223130)</p>
+    <p>&emsp;Naufal Hanif Arsyah (1301220389)</p>
+    <br>
+    <div class="form-group">
+        <label for="kapasitas">Kapasitas Knapsack:</label>
+        <input type="number" id="kapasitas" placeholder="Masukkan kapasitas Knapsack">
+    </div>
+    <div class="form-group">
+        <label for="berat-barang">Berat Barang:</label>
+        <input type="number" id="berat-barang" placeholder="Masukkan berat barang">
+    </div>
+    <div class="form-group">
+        <label for="profit-barang">Profit Barang:</label>
+        <input type="number" id="profit-barang" placeholder="Masukkan profit barang">
+    </div>
+    <button class="btn" onclick="tambahBarang()">Tambah Barang</button>
+    <button class="btn" onclick="exhaustiveSearchKnapsack()">Cek Solusi</button>
+    
+    <table id="items-table">
+        <thead>
+            <tr>
+                <th>Barang #</th>
+                <th>Berat</th>
+                <th>Profit</th>
+            </tr>
+        </thead>
+        <tbody id="items-body">
+        </tbody>
+    </table>
+    
+    <div id="result">
+        <h2>Hasil:</h2>
+        <div id="max-value"></div>
+        <div id="items-taken"></div>
+    </div>
+
+    <script src="js/exhaustiveSearch.js"></script>
+</body>
+</html>
